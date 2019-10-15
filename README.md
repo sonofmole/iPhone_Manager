@@ -5,7 +5,7 @@ To be used along side RDM and RDMMonitor.
 
 ## Features
 ---
-The bot will generate a list of iPhones from your RDM build database.
+The bot will generate a list of iPhones from your RDM manager SQlite database.
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
 The bot will only accept commands from the Discord role you set and post in a channel you set.
 
