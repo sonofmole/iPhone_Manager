@@ -70,22 +70,32 @@ In iphone_manager.py you will need to edit :
 ### Usages 
 ---
 **Screenshot device & upload image to discord**
+
 `!sc {device_id} or {device_name}`
+
 *Example : !sc iphone-se1*  &nbsp; **or** &nbsp; *!sc 7ab3*
 
 **Make RDM rebuild & reload pogo**
+
 `!reload {device_id} or {device_name}`
+
 *Example : !reload iphone-se1* &nbsp;  **or**  &nbsp; *!reload 7ab3*
 
 **Reboot iPhone**
+
 `!reboot {device_id} or {device_name}`
+
 *Example : !reboot iphone-se1* &nbsp;  **or** &nbsp;  *!reboot 7ab3*
 
 **Screenshot the Mac**
+
 `!mac grab`
 
+
 **Kill the usbmuxd process ID**
+
 `!kill usb`
+
 
 
 
