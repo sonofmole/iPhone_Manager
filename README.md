@@ -21,10 +21,15 @@ The bot will only accept commands from the Discord role you set and post in a ch
 iPhone Manager is made using Python3 and will require :
 
 sqlite3
+
 hashlib
+
 discord
+
 psutil
+
 subprocess
+
 asyncio
 
 You will also need libimobiledevice installed on the Mac.
