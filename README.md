@@ -5,12 +5,12 @@ To be used along side RDM.
 
 ## Features
 ---
-iPhone-Manage will generate a list of iPhones from your RDM manager SQlite database(s).
+iPhone-Manage will generate a list of iPhones from your RDM manager SQLite database(s).
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
 iPhone-Manage will only accept commands from the Discord role you set and only post in a channel you set.
 
 + Manage your iphone's by taking screenshot's and have them upload to Discord.
-+ Have RDM rebuild and restart Pogo on a iPhone
++ Have RDM rebuild and restart Pogo on an iPhone
 + Kill usbmuxd on the Mac (it will auto restart), which should have all iPhone's rebuild.
 + Reboot your iPhone
 + Take a screenshot of your Mac and upload to Discord
@@ -36,7 +36,7 @@ You will also need libimobiledevice installed on the Mac.
 
 ### Troubleshooting libimobiledevice
 ---
-After install of libimobiledevice, check it's working. You can test by taking a screenshot on a iPhone. Connect the iPhone to your Mac and get it's UUID from Xcode, in terminal type:
+After install of libimobiledevice, check it's working. You can test by taking a screenshot on an iPhone. Connect the iPhone to your Mac and get it's UUID from Xcode, in terminal type:
 idevicescreenshot -u your-uuid-of-iphone  This will save a screenshot of the connected iPhone. If you get the error "Could not connect to lockdownd, error code -21" 
 please see https://github.com/google/ios-webkit-debug-proxy/issues/290
 
@@ -56,17 +56,17 @@ Info from page
 ---
 In iphone_manager.py you will need to edit :
 
-* **Number of database**
-*If you run more then one Manager on the Mac, else set to 1
+* **Number of database :**
+*If you run more then one Manager on the Mac, else set to 1*
 
-* **Path to the database** 
+* **Path to the database :** 
 *Use the full path*
 
-* **Channel name**
+* **Channel name :**
 *The channel you want the bot to post to*
 
-* **Discord Role**
-*The role requied by the user to control the bot*
+* **Discord Role :**
+*The role required by the user to control the bot*
 
 
 ### Starting the bot
