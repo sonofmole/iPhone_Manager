@@ -1,17 +1,17 @@
 # iPhone-Manager
 ---
-A python Discord bot to monitor and have some control over iPhone's connected to a Mac by USB.
-To be used along side RDM and RDMMonitor.
+A Python Discord bot to monitor and have some control over iPhone's connected to a Mac by USB.
+To be used along side RDM. 
 
 ## Features
 ---
-The bot will generate a list of iPhones from your RDM manager SQlite database.
+iPhone-Manage will generate a list of iPhones from your RDM manager SQlite database(s).
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
-The bot will only accept commands from the Discord role you set and post in a channel you set.
+iPhone-Manage will only accept commands from the Discord role you set and only post in a channel you set.
 
-+ Manage your iphone's by taking screenshot's and have the bot upload them.
++ Manage your iphone's by taking screenshot's and have them upload to Discord.
 + Have RDM rebuild and restart Pogo on a iPhone
-+ Kill usbmuxd on the Mac, which should have all iPhone's rebuild.
++ Kill usbmuxd on the Mac (it will auto restart), which should have all iPhone's rebuild.
 + Reboot your iPhone
 + Take a screenshot of your Mac and upload to Discord
 
@@ -56,6 +56,9 @@ Info from page
 ---
 In iphone_manager.py you will need to edit :
 
+* **Number of database**
+*If you run more then one Manager on the Mac, else set to 1
+
 * **Path to the database** 
 *Use the full path*
 
@@ -96,11 +99,13 @@ In iphone_manager.py you will need to edit :
 
 `!mac grab`
 
-
 **Kill the usbmuxd process ID**
 
 `!kill usb`
 
+**Display the help**
+
+`!help`
 
 
 
