@@ -8,6 +8,7 @@ To be used along side RDM.
 iPhone-Manage will generate a list of iPhones from your RDM manager SQLite database(s).
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
 iPhone-Manage will only accept commands from the Discord role you set and only post in a channel you set.
+All config settings are in a ymal file.
 
 + Manage your iphone's by taking screenshot's and have them upload to Discord.
 + Have RDM rebuild and restart Pogo on an iPhone
@@ -21,6 +22,10 @@ iPhone-Manage will only accept commands from the Discord role you set and only p
 iPhone Manager is made using Python3 and will require :
 
 sqlite3
+
+sys
+
+yaml
 
 hashlib
 
@@ -54,19 +59,19 @@ Info from page
 
 ### Getting started
 ---
-In iphone_manager.py you will need to edit :
-
-* **Number of database :**
-*If you run more then one Manager on the Mac, else set to 1*
+In config.yaml you will need to edit :
 
 * **Path to the database :** 
-*Use the full path*
+*A Python list, you full path including filename and extension*
 
 * **Channel name :**
 *The channel you want the bot to post to*
 
 * **Discord Role :**
 *The role required by the user to control the bot*
+
+* **Discord Token :**
+*Enter your bot token*
 
 
 ### Starting the bot
