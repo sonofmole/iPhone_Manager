@@ -21,21 +21,14 @@ All config settings are in a YAML file.
 ---
 iPhone Manager is made using Python3 and will require :
 
-sqlite3
-
-sys
-
-yaml
-
-hashlib
+pyyaml
 
 discord
 
 psutil
 
-subprocess
+Xcode 10.2.1>
 
-asyncio
 
 You will also need libimobiledevice installed on the Mac.
 
