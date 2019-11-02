@@ -8,7 +8,7 @@ To be used along side RDM.
 iPhone-Manage will generate a list of iPhones from your RDM manager SQLite database(s).
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
 iPhone-Manage will only accept commands from the Discord role you set and only post in a channel you set.
-All config settings are in a ymal file.
+All config settings are in a YAML file.
 
 + Manage your iphone's by taking screenshot's and have them upload to Discord.
 + Have RDM rebuild and restart Pogo on an iPhone
