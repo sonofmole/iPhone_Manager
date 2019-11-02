@@ -62,7 +62,7 @@ Info from page
 In config.yaml you will need to edit :
 
 * **Path to the database :** 
-*A Python list, you full path including filename and extension*
+*A Python list, use full path including filename and extension*
 
 * **Channel name :**
 *The channel you want the bot to post to*
