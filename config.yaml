@@ -1,0 +1,7 @@
+# config.yaml file
+
+
+paths: [ "/Users/owner/Desktop/iphone_monitor/db.sqlite" ]
+token: "YOUR TOKEN"
+role: "iphone_admin"
+channel: "testing"
