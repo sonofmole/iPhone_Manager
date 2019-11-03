@@ -48,7 +48,7 @@ try:
 	with open(r'config.yaml') as file:
 		documents = yaml.safe_load(file)
 except FileNotFoundError:
-	print ("**** FULL STOP! ***** db_path.yaml NOT FOUND! ****")
+	print ("**** FULL STOP! ***** config.yaml NOT FOUND! ****")
 	sys.exit()
 
 token = documents.get("token")
