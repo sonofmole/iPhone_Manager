@@ -52,6 +52,8 @@ Info from page
 
 ### Getting started
 ---
+Install the Python3 requirements using pip3 install -r requirements.txt 
+
 In config.yaml you will need to edit :
 
 * **Path to the database :** 
