@@ -5,9 +5,9 @@ To be used along side RDM.
 
 ## Features
 ---
-iPhone-Manage will generate a list of iPhones from your RDM manager SQLite database(s).
+iPhone-Manager will generate a list of iPhones from your RDM manager SQLite database(s).
 The list will contain the iPhone name, UUID and a generated ID for each iPhone.
-iPhone-Manage will only accept commands from the Discord role you set and only post in a channel you set.
+iPhone-Manager will only accept commands from the Discord role you set and only post in a channel you set.
 All config settings are in a YAML file.
 
 + Manage your iphone's by taking screenshot's and have them upload to Discord.
@@ -15,6 +15,8 @@ All config settings are in a YAML file.
 + Kill usbmuxd on the Mac (it will auto restart), which should have all iPhone's rebuild.
 + Reboot your iPhone
 + Take a screenshot of your Mac and upload to Discord
++ Have the last X lines of a device log printed out in Discord
++ Have the last X lines of a device log uploaded to Discord as a log file
 
 
 ### Prerequisites
@@ -59,11 +61,20 @@ In config.yaml you will need to edit :
 * **Path to the database :** 
 *A Python list, use full path including filename and extension*
 
+* **Path to the device logs :** 
+*A Python list*
+
 * **Channel name :**
 *The channel you want the bot to post to*
 
 * **Discord Role :**
 *The role required by the user to control the bot*
+
+* **Loglines :**
+*How many lines the bot will printout in Discord - prints out 10 lines every 900ms*
+
+* **uploglines :**
+*How many lines the uploaded logfile will contain*
 
 * **Discord Token :**
 *Enter your bot token*
@@ -102,6 +113,14 @@ In config.yaml you will need to edit :
 **Kill the usbmuxd process ID**
 
 `!kill usb`
+
+**Have the last X lines of a device log printed out in Discord**
+
+`!log {device_id} or {device_name}`
+
+**Have the last X lines of a device log uploaded to Discord as a log file**
+
+`!uplog {device_id} or {device_name}`
 
 **Display the help**
 
