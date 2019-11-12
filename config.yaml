@@ -1,7 +1,15 @@
 # config.yaml file
+# Both paths (for your database) and logpath are lists
+# token , role and channel are all strings. Please don't use the Discord ID for Channel or Role.
+# Any user with the Role you set below can control the bot
+# logline : How many lines the bot will printout in Discord - prints out 10 lines every 900ms
+# uploadlines : How many lines the uploaded logfile will contain 
+# *** YOUR LOG FILE MY CONTAIN INFORMATION YOU DO NOT WANT PUBLIC, think about the channel you set ***
 
-
-paths: [ "/Users/owner/Desktop/iphone_monitor/db.sqlite" ]
+paths: [ "/Users/Owner/iPhone_Manager-master/db.sqlite" , "/Users/Owner/iPhone_Manager-master/db1.sqlite" ]
+logpath: [ "/Users/Owner/iPhone_Manager-master/logs", "/Users/Owner/iPhone_Manager-master/logs2" ]
+loglines: 60
+uploglines: 3000
 token: "YOUR TOKEN"
-role: "iphone_admin"
-channel: "testing"
+role: "YOUR_ROLE"  
+channel: "YOUR_CHANNEL"
